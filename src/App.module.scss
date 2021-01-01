@@ -1,0 +1,19 @@
+.app {
+  text-align: center;
+  background-color: #6e6e6e;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .title {
+    width: 100%;
+    margin: 10px;
+    & h1 {
+      font-size: 40px;
+    }
+    & h1 span {
+      color: #ffa600;
+    }
+  }
+}

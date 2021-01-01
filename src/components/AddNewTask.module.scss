@@ -1,0 +1,33 @@
+@import "../style/variable";
+
+.new {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & input {
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    padding: 0 5px;
+  }
+  & button {
+    margin: 5px;
+    height: 33px;
+    width: 33px;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: $color-accent;
+    border: none;
+    color: $color-white;
+    outline: none;
+    &:hover {
+      background-color: darken($color-accent, 5%);
+    }
+    &:active {
+      background-color: $color-black;
+      color: $color-accent;
+    }
+  }
+}

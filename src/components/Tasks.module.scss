@@ -1,0 +1,44 @@
+@import "../style/variable";
+
+.task {
+  margin: 5px auto;
+  width: 400px;
+  padding: 5px;
+
+  & .item {
+    margin: 10px 0;
+    background-color: $color-white;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+
+    & input {
+      width: 25px;
+      height: 25px;
+      background-color: $color-accent;
+    }
+
+    & button {
+      width: 25px;
+      height: 25px;
+      background-color: $color-accent;
+      border: none;
+      outline: none;
+      font-weight: bold;
+      font-size: 20px;
+      color: $color-white;
+      transition: 0.3s;
+
+      &:hover {
+        background-color: darken($color-accent, 5%);
+        color: #ffffff;
+      }
+      &:active {
+        background-color: red;
+        color: $color-white;
+      }
+    }
+  }
+}
